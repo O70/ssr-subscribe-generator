@@ -184,6 +184,7 @@ if __name__ == '__main__':
 	print(args)
 	print(args.verbose)
 	print('merge branch test1')
+	print('merge branch test2')
 
 	# print(argparse.ArgumentParser().add_argument())
 	# print(parser.add_argument.__doc__)
