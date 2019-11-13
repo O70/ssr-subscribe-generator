@@ -181,8 +181,4 @@ if __name__ == '__main__':
 	parser.add_argument('-V', '--version', help = 'Display version information', action = 'store_true')
 	args = parser.parse_args()
 
-	print(args)
-	print(args.verbose)
-
-	# print(argparse.ArgumentParser().add_argument())
-	# print(parser.add_argument.__doc__)
+	if args.version: print(props['version'])
