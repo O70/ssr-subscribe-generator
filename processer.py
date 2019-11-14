@@ -179,6 +179,11 @@ if __name__ == '__main__':
 	parser = argparse.ArgumentParser()
 	parser.add_argument('-v', '--verbose', help = 'Increase output verbosity', action = 'store_true')
 	parser.add_argument('-V', '--version', help = 'Display version information', action = 'store_true')
+	parser.add_argument('--serve', help = 'Open web server', action = 'store_true')
 	args = parser.parse_args()
+	print(args.serve)
+	
 
 	if args.version: print(props['version'])
+
+	print('Process....')
