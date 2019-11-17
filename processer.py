@@ -183,7 +183,12 @@ if __name__ == '__main__':
 	args = parser.parse_args()
 	print(args.serve)
 	
+	if args.version:
+		print(props['version'])
+	elif args.verbose:
+		pass
+	elif args.serve:
+		pass
+	else:
+		print('Process....')
 
-	if args.version: print(props['version'])
-
-	print('Process....')
